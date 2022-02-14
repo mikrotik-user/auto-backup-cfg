@@ -1,5 +1,6 @@
 # RouterOS 6.49.2
 # This script makes configuration backup in text mode and transfers to FTP server
+# The script is part of https://github.com/mikrotik-user/auto-backup-cfg
 /system scheduler
 add interval=1w1d name=export_cfg on-event=":local userName \"USERNAME\"\r\
     \n:local userPassword \"PASSWORD\"\r\
